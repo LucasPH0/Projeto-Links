@@ -35,6 +35,7 @@ body {
   /*background: color image repeat position/size*/
 
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * { 
@@ -163,4 +164,16 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media queries */
+@media (min-width: 700px) {
+  :root {
+  --bg-url: url(./assets/bg.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-light.jpg);
+  }
+
 }
